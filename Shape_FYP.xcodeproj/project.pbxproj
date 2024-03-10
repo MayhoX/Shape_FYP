@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20F8F4DB2B9DFE5F00447299 /* Shape_FYPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8F4DA2B9DFE5F00447299 /* Shape_FYPApp.swift */; };
+		20F8F4DD2B9DFE5F00447299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8F4DC2B9DFE5F00447299 /* ContentView.swift */; };
+		20F8F4DF2B9DFE6100447299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F8F4DE2B9DFE6100447299 /* Assets.xcassets */; };
+		20F8F4E22B9DFE6100447299 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F8F4E12B9DFE6100447299 /* Preview Assets.xcassets */; };
+		20F8F4EC2B9DFE6100447299 /* Shape_FYPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8F4EB2B9DFE6100447299 /* Shape_FYPTests.swift */; };
+		20F8F4F62B9DFE6100447299 /* Shape_FYPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8F4F52B9DFE6100447299 /* Shape_FYPUITests.swift */; };
+		20F8F4F82B9DFE6100447299 /* Shape_FYPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8F4F72B9DFE6100447299 /* Shape_FYPUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20F8F4E82B9DFE6100447299 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20F8F4CF2B9DFE5F00447299 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20F8F4D62B9DFE5F00447299;
+			remoteInfo = Shape_FYP;
+		};
+		20F8F4F22B9DFE6100447299 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20F8F4CF2B9DFE5F00447299 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20F8F4D62B9DFE5F00447299;
+			remoteInfo = Shape_FYP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20F8F4D72B9DFE5F00447299 /* Shape_FYP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shape_FYP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20F8F4DA2B9DFE5F00447299 /* Shape_FYPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape_FYPApp.swift; sourceTree = "<group>"; };
+		20F8F4DC2B9DFE5F00447299 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		20F8F4DE2B9DFE6100447299 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20F8F4E12B9DFE6100447299 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		20F8F4E72B9DFE6100447299 /* Shape_FYPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Shape_FYPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20F8F4EB2B9DFE6100447299 /* Shape_FYPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape_FYPTests.swift; sourceTree = "<group>"; };
+		20F8F4F12B9DFE6100447299 /* Shape_FYPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Shape_FYPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20F8F4F52B9DFE6100447299 /* Shape_FYPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape_FYPUITests.swift; sourceTree = "<group>"; };
+		20F8F4F72B9DFE6100447299 /* Shape_FYPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape_FYPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20F8F4D42B9DFE5F00447299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20F8F4E42B9DFE6100447299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20F8F4EE2B9DFE6100447299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20F8F4CE2B9DFE5F00447299 = {
+			isa = PBXGroup;
+			children = (
+				20F8F4D92B9DFE5F00447299 /* Shape_FYP */,
+				20F8F4EA2B9DFE6100447299 /* Shape_FYPTests */,
+				20F8F4F42B9DFE6100447299 /* Shape_FYPUITests */,
+				20F8F4D82B9DFE5F00447299 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20F8F4D82B9DFE5F00447299 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20F8F4D72B9DFE5F00447299 /* Shape_FYP.app */,
+				20F8F4E72B9DFE6100447299 /* Shape_FYPTests.xctest */,
+				20F8F4F12B9DFE6100447299 /* Shape_FYPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20F8F4D92B9DFE5F00447299 /* Shape_FYP */ = {
+			isa = PBXGroup;
+			children = (
+				20F8F4DA2B9DFE5F00447299 /* Shape_FYPApp.swift */,
+				20F8F4DC2B9DFE5F00447299 /* ContentView.swift */,
+				20F8F4DE2B9DFE6100447299 /* Assets.xcassets */,
+				20F8F4E02B9DFE6100447299 /* Preview Content */,
+			);
+			path = Shape_FYP;
+			sourceTree = "<group>";
+		};
+		20F8F4E02B9DFE6100447299 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				20F8F4E12B9DFE6100447299 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		20F8F4EA2B9DFE6100447299 /* Shape_FYPTests */ = {
+			isa = PBXGroup;
+			children = (
+				20F8F4EB2B9DFE6100447299 /* Shape_FYPTests.swift */,
+			);
+			path = Shape_FYPTests;
+			sourceTree = "<group>";
+		};
+		20F8F4F42B9DFE6100447299 /* Shape_FYPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20F8F4F52B9DFE6100447299 /* Shape_FYPUITests.swift */,
+				20F8F4F72B9DFE6100447299 /* Shape_FYPUITestsLaunchTests.swift */,
+			);
+			path = Shape_FYPUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20F8F4D62B9DFE5F00447299 /* Shape_FYP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20F8F4FB2B9DFE6100447299 /* Build configuration list for PBXNativeTarget "Shape_FYP" */;
+			buildPhases = (
+				20F8F4D32B9DFE5F00447299 /* Sources */,
+				20F8F4D42B9DFE5F00447299 /* Frameworks */,
+				20F8F4D52B9DFE5F00447299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shape_FYP;
+			productName = Shape_FYP;
+			productReference = 20F8F4D72B9DFE5F00447299 /* Shape_FYP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20F8F4E62B9DFE6100447299 /* Shape_FYPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20F8F4FE2B9DFE6100447299 /* Build configuration list for PBXNativeTarget "Shape_FYPTests" */;
+			buildPhases = (
+				20F8F4E32B9DFE6100447299 /* Sources */,
+				20F8F4E42B9DFE6100447299 /* Frameworks */,
+				20F8F4E52B9DFE6100447299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20F8F4E92B9DFE6100447299 /* PBXTargetDependency */,
+			);
+			name = Shape_FYPTests;
+			productName = Shape_FYPTests;
+			productReference = 20F8F4E72B9DFE6100447299 /* Shape_FYPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20F8F4F02B9DFE6100447299 /* Shape_FYPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20F8F5012B9DFE6100447299 /* Build configuration list for PBXNativeTarget "Shape_FYPUITests" */;
+			buildPhases = (
+				20F8F4ED2B9DFE6100447299 /* Sources */,
+				20F8F4EE2B9DFE6100447299 /* Frameworks */,
+				20F8F4EF2B9DFE6100447299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20F8F4F32B9DFE6100447299 /* PBXTargetDependency */,
+			);
+			name = Shape_FYPUITests;
+			productName = Shape_FYPUITests;
+			productReference = 20F8F4F12B9DFE6100447299 /* Shape_FYPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20F8F4CF2B9DFE5F00447299 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					20F8F4D62B9DFE5F00447299 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					20F8F4E62B9DFE6100447299 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 20F8F4D62B9DFE5F00447299;
+					};
+					20F8F4F02B9DFE6100447299 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 20F8F4D62B9DFE5F00447299;
+					};
+				};
+			};
+			buildConfigurationList = 20F8F4D22B9DFE5F00447299 /* Build configuration list for PBXProject "Shape_FYP" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20F8F4CE2B9DFE5F00447299;
+			productRefGroup = 20F8F4D82B9DFE5F00447299 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20F8F4D62B9DFE5F00447299 /* Shape_FYP */,
+				20F8F4E62B9DFE6100447299 /* Shape_FYPTests */,
+				20F8F4F02B9DFE6100447299 /* Shape_FYPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20F8F4D52B9DFE5F00447299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F8F4E22B9DFE6100447299 /* Preview Assets.xcassets in Resources */,
+				20F8F4DF2B9DFE6100447299 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20F8F4E52B9DFE6100447299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20F8F4EF2B9DFE6100447299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20F8F4D32B9DFE5F00447299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F8F4DD2B9DFE5F00447299 /* ContentView.swift in Sources */,
+				20F8F4DB2B9DFE5F00447299 /* Shape_FYPApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20F8F4E32B9DFE6100447299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F8F4EC2B9DFE6100447299 /* Shape_FYPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20F8F4ED2B9DFE6100447299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F8F4F82B9DFE6100447299 /* Shape_FYPUITestsLaunchTests.swift in Sources */,
+				20F8F4F62B9DFE6100447299 /* Shape_FYPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20F8F4E92B9DFE6100447299 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20F8F4D62B9DFE5F00447299 /* Shape_FYP */;
+			targetProxy = 20F8F4E82B9DFE6100447299 /* PBXContainerItemProxy */;
+		};
+		20F8F4F32B9DFE6100447299 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20F8F4D62B9DFE5F00447299 /* Shape_FYP */;
+			targetProxy = 20F8F4F22B9DFE6100447299 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		20F8F4F92B9DFE6100447299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20F8F4FA2B9DFE6100447299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20F8F4FC2B9DFE6100447299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Shape_FYP/Preview Content\"";
+				DEVELOPMENT_TEAM = N7Z7BVW7UA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hk.edu.shape.Shape-FYP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20F8F4FD2B9DFE6100447299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Shape_FYP/Preview Content\"";
+				DEVELOPMENT_TEAM = N7Z7BVW7UA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hk.edu.shape.Shape-FYP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20F8F4FF2B9DFE6100447299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7Z7BVW7UA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hk.edu.shape.Shape-FYPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shape_FYP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Shape_FYP";
+			};
+			name = Debug;
+		};
+		20F8F5002B9DFE6100447299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7Z7BVW7UA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hk.edu.shape.Shape-FYPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shape_FYP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Shape_FYP";
+			};
+			name = Release;
+		};
+		20F8F5022B9DFE6100447299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7Z7BVW7UA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hk.edu.shape.Shape-FYPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Shape_FYP;
+			};
+			name = Debug;
+		};
+		20F8F5032B9DFE6100447299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7Z7BVW7UA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hk.edu.shape.Shape-FYPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Shape_FYP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20F8F4D22B9DFE5F00447299 /* Build configuration list for PBXProject "Shape_FYP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20F8F4F92B9DFE6100447299 /* Debug */,
+				20F8F4FA2B9DFE6100447299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20F8F4FB2B9DFE6100447299 /* Build configuration list for PBXNativeTarget "Shape_FYP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20F8F4FC2B9DFE6100447299 /* Debug */,
+				20F8F4FD2B9DFE6100447299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20F8F4FE2B9DFE6100447299 /* Build configuration list for PBXNativeTarget "Shape_FYPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20F8F4FF2B9DFE6100447299 /* Debug */,
+				20F8F5002B9DFE6100447299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20F8F5012B9DFE6100447299 /* Build configuration list for PBXNativeTarget "Shape_FYPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20F8F5022B9DFE6100447299 /* Debug */,
+				20F8F5032B9DFE6100447299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20F8F4CF2B9DFE5F00447299 /* Project object */;
+}
