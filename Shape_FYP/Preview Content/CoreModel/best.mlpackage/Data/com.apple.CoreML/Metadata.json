@@ -1,0 +1,16 @@
+{
+  "MLModelVersionStringKey" : "8.0.200",
+  "MLModelDescriptionKey" : "Ultralytics best model trained on \/Users\/Evan\/Downloads\/YOLOv8\/push-up-6\/data.yaml",
+  "MLModelCreatorDefinedKey" : {
+    "stride" : "32",
+    "Confidence threshold" : "0.25",
+    "IoU threshold" : "0.45",
+    "task" : "detect",
+    "date" : "2023-12-02T22:11:45.183300",
+    "imgsz" : "[1280, 1280]",
+    "batch" : "1",
+    "names" : "{0: 'pushdown', 1: 'pushup'}"
+  },
+  "MLModelAuthorKey" : "Ultralytics",
+  "MLModelLicenseKey" : "AGPL-3.0 https:\/\/ultralytics.com\/license"
+}
