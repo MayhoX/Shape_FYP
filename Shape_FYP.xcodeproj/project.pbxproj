@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20193B392BC580BF00FDFBCF /* ExercisesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20193B382BC580BF00FDFBCF /* ExercisesViewModel.swift */; };
+		203AD5F72BC5231B00FBAA09 /* best.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 203AD5F52BC5231A00FBAA09 /* best.mlpackage */; };
+		203AD5F82BC5231B00FBAA09 /* last.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 203AD5F62BC5231B00FBAA09 /* last.mlpackage */; };
+		203AD5FA2BC552C700FBAA09 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203AD5F92BC552C700FBAA09 /* HomeView.swift */; };
+		205D5A332B9ED7EF00C7363C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D5A322B9ED7EF00C7363C /* RegisterView.swift */; };
+		206D0EF52BC3AF06002D1812 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D0EF42BC3AF06002D1812 /* ResultView.swift */; };
+		206D0EF72BC3AF10002D1812 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D0EF62BC3AF10002D1812 /* HistoryView.swift */; };
+		209D52952BE36C6B00FBC84A /* HistoryInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209D52942BE36C6B00FBC84A /* HistoryInfoView.swift */; };
+		20B5A0572BA1801600A17869 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5A0562BA1801600A17869 /* HistoryViewModel.swift */; };
+		20B5A0592BA1802200A17869 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5A0582BA1802200A17869 /* History.swift */; };
+		20B5A05B2BA181DD00A17869 /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5A05A2BA181DD00A17869 /* Exercises.swift */; };
 		20F8F4DF2B9DFE6100447299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F8F4DE2B9DFE6100447299 /* Assets.xcassets */; };
 		20F8F4E22B9DFE6100447299 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F8F4E12B9DFE6100447299 /* Preview Assets.xcassets */; };
 		20F8F4EC2B9DFE6100447299 /* Shape_FYPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8F4EB2B9DFE6100447299 /* Shape_FYPTests.swift */; };
@@ -20,8 +31,6 @@
 		20F8F51B2B9DFE7A00447299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8F50B2B9DFE7700447299 /* ContentView.swift */; };
 		20F8F51C2B9DFE7A00447299 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8F50D2B9DFE7700447299 /* LoginViewModel.swift */; };
 		20F8F51D2B9DFE7A00447299 /* Shape_FYPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8F50F2B9DFE7700447299 /* Shape_FYPApp.swift */; };
-		20F8F51E2B9DFE7A00447299 /* best.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 20F8F5102B9DFE7A00447299 /* best.mlpackage */; };
-		20F8F51F2B9DFE7A00447299 /* last111.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 20F8F5112B9DFE7A00447299 /* last111.mlpackage */; };
 		20F8F5202B9DFE7A00447299 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20F8F5132B9DFE7A00447299 /* GoogleService-Info.plist */; };
 		20F8F5212B9DFE7A00447299 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8F5142B9DFE7A00447299 /* User.swift */; };
 		20F8F5242B9DFEBD00447299 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 20F8F5232B9DFEBD00447299 /* FirebaseAnalytics */; };
@@ -53,6 +62,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20193B382BC580BF00FDFBCF /* ExercisesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewModel.swift; sourceTree = "<group>"; };
+		20193B3A2BC63FCE00FDFBCF /* Shape_FYP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Shape_FYP.entitlements; sourceTree = "<group>"; };
+		20193B3B2BC6401D00FDFBCF /* Shape-FYP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Shape-FYP-Info.plist"; sourceTree = SOURCE_ROOT; };
+		203AD5F52BC5231A00FBAA09 /* best.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = best.mlpackage; sourceTree = "<group>"; };
+		203AD5F62BC5231B00FBAA09 /* last.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = last.mlpackage; sourceTree = "<group>"; };
+		203AD5F92BC552C700FBAA09 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		205D5A322B9ED7EF00C7363C /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		206D0EF42BC3AF06002D1812 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		206D0EF62BC3AF10002D1812 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		209D52942BE36C6B00FBC84A /* HistoryInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInfoView.swift; sourceTree = "<group>"; };
+		20B5A0562BA1801600A17869 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		20B5A0582BA1802200A17869 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		20B5A05A2BA181DD00A17869 /* Exercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
 		20F8F4D72B9DFE5F00447299 /* Shape_FYP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shape_FYP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F8F4DE2B9DFE6100447299 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20F8F4E12B9DFE6100447299 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -69,8 +91,6 @@
 		20F8F50B2B9DFE7700447299 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		20F8F50D2B9DFE7700447299 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		20F8F50F2B9DFE7700447299 /* Shape_FYPApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape_FYPApp.swift; sourceTree = "<group>"; };
-		20F8F5102B9DFE7A00447299 /* best.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = best.mlpackage; sourceTree = "<group>"; };
-		20F8F5112B9DFE7A00447299 /* last111.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = last111.mlpackage; sourceTree = "<group>"; };
 		20F8F5132B9DFE7A00447299 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		20F8F5142B9DFE7A00447299 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +129,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		206D0EF22BC3AEB2002D1812 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				206D0EF62BC3AF10002D1812 /* HistoryView.swift */,
+				209D52942BE36C6B00FBC84A /* HistoryInfoView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		206D0EF32BC3AEBE002D1812 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				206D0EF42BC3AF06002D1812 /* ResultView.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
 		20F8F4CE2B9DFE5F00447299 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +169,15 @@
 		20F8F4D92B9DFE5F00447299 /* Shape_FYP */ = {
 			isa = PBXGroup;
 			children = (
+				20193B3B2BC6401D00FDFBCF /* Shape-FYP-Info.plist */,
+				20193B3A2BC63FCE00FDFBCF /* Shape_FYP.entitlements */,
+				20F8F50F2B9DFE7700447299 /* Shape_FYPApp.swift */,
+				20F8F5122B9DFE7A00447299 /* CoreModel */,
+				20F8F5152B9DFE7A00447299 /* Model */,
+				20F8F50C2B9DFE7700447299 /* View */,
+				20F8F50E2B9DFE7700447299 /* ViewModel */,
+				20F8F4DE2B9DFE6100447299 /* Assets.xcassets */,
+				20F8F5132B9DFE7A00447299 /* GoogleService-Info.plist */,
 				20F8F4E02B9DFE6100447299 /* Preview Content */,
 			);
 			path = Shape_FYP;
@@ -140,14 +186,7 @@
 		20F8F4E02B9DFE6100447299 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				20F8F50F2B9DFE7700447299 /* Shape_FYPApp.swift */,
-				20F8F5122B9DFE7A00447299 /* CoreModel */,
-				20F8F5152B9DFE7A00447299 /* Model */,
-				20F8F50C2B9DFE7700447299 /* View */,
-				20F8F50E2B9DFE7700447299 /* ViewModel */,
 				20F8F4E12B9DFE6100447299 /* Preview Assets.xcassets */,
-				20F8F4DE2B9DFE6100447299 /* Assets.xcassets */,
-				20F8F5132B9DFE7A00447299 /* GoogleService-Info.plist */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -184,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				20F8F5092B9DFE7700447299 /* LoginView.swift */,
+				205D5A322B9ED7EF00C7363C /* RegisterView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -191,9 +231,12 @@
 		20F8F50C2B9DFE7700447299 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				20F8F5082B9DFE7700447299 /* DetectView */,
-				20F8F50A2B9DFE7700447299 /* Login */,
 				20F8F50B2B9DFE7700447299 /* ContentView.swift */,
+				203AD5F92BC552C700FBAA09 /* HomeView.swift */,
+				20F8F50A2B9DFE7700447299 /* Login */,
+				20F8F5082B9DFE7700447299 /* DetectView */,
+				206D0EF32BC3AEBE002D1812 /* Result */,
+				206D0EF22BC3AEB2002D1812 /* History */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,6 +245,8 @@
 			isa = PBXGroup;
 			children = (
 				20F8F50D2B9DFE7700447299 /* LoginViewModel.swift */,
+				20B5A0562BA1801600A17869 /* HistoryViewModel.swift */,
+				20193B382BC580BF00FDFBCF /* ExercisesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -209,8 +254,8 @@
 		20F8F5122B9DFE7A00447299 /* CoreModel */ = {
 			isa = PBXGroup;
 			children = (
-				20F8F5102B9DFE7A00447299 /* best.mlpackage */,
-				20F8F5112B9DFE7A00447299 /* last111.mlpackage */,
+				203AD5F52BC5231A00FBAA09 /* best.mlpackage */,
+				203AD5F62BC5231B00FBAA09 /* last.mlpackage */,
 			);
 			path = CoreModel;
 			sourceTree = "<group>";
@@ -219,6 +264,8 @@
 			isa = PBXGroup;
 			children = (
 				20F8F5142B9DFE7A00447299 /* User.swift */,
+				20B5A0582BA1802200A17869 /* History.swift */,
+				20B5A05A2BA181DD00A17869 /* Exercises.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -369,16 +416,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				20F8F5212B9DFE7A00447299 /* User.swift in Sources */,
+				20193B392BC580BF00FDFBCF /* ExercisesViewModel.swift in Sources */,
 				20F8F5162B9DFE7A00447299 /* CameraPreview.swift in Sources */,
+				20B5A0592BA1802200A17869 /* History.swift in Sources */,
 				20F8F51A2B9DFE7A00447299 /* LoginView.swift in Sources */,
 				20F8F51B2B9DFE7A00447299 /* ContentView.swift in Sources */,
-				20F8F51F2B9DFE7A00447299 /* last111.mlpackage in Sources */,
+				20B5A05B2BA181DD00A17869 /* Exercises.swift in Sources */,
 				20F8F51D2B9DFE7A00447299 /* Shape_FYPApp.swift in Sources */,
-				20F8F51E2B9DFE7A00447299 /* best.mlpackage in Sources */,
 				20F8F5192B9DFE7A00447299 /* DetectionView.swift in Sources */,
+				209D52952BE36C6B00FBC84A /* HistoryInfoView.swift in Sources */,
 				20F8F5172B9DFE7A00447299 /* CameraView.swift in Sources */,
+				203AD5FA2BC552C700FBAA09 /* HomeView.swift in Sources */,
+				203AD5F82BC5231B00FBAA09 /* last.mlpackage in Sources */,
+				206D0EF52BC3AF06002D1812 /* ResultView.swift in Sources */,
+				206D0EF72BC3AF10002D1812 /* HistoryView.swift in Sources */,
+				205D5A332B9ED7EF00C7363C /* RegisterView.swift in Sources */,
 				20F8F5182B9DFE7A00447299 /* DetectedObjectsView.swift in Sources */,
+				20B5A0572BA1801600A17869 /* HistoryViewModel.swift in Sources */,
 				20F8F51C2B9DFE7A00447299 /* LoginViewModel.swift in Sources */,
+				203AD5F72BC5231B00FBAA09 /* best.mlpackage in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,13 +595,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Shape_FYP/Shape_FYP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Shape_FYP/Preview Content\"";
 				DEVELOPMENT_TEAM = N7Z7BVW7UA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Shape-FYP-Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = HealthKit;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = HealthKit;
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = HealthKit;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -570,13 +631,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Shape_FYP/Shape_FYP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Shape_FYP/Preview Content\"";
 				DEVELOPMENT_TEAM = N7Z7BVW7UA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Shape-FYP-Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = HealthKit;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = HealthKit;
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = HealthKit;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

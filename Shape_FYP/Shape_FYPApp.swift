@@ -19,10 +19,13 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct Shape_FYPApp: App {
+    @StateObject var loginViewModel = LoginViewModel()
+    
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(loginViewModel)
         }
     }
 }

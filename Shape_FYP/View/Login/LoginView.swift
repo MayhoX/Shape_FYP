@@ -10,7 +10,7 @@ import SwiftUI
 struct LoginView: View {
     @State private var email: String = ""
     @State private var password: String = ""
-    @StateObject var loginViewModel = LoginViewModel()
+    @EnvironmentObject var loginViewModel: LoginViewModel
     @State private var showAlert = false
     
     
@@ -35,6 +35,7 @@ struct LoginView: View {
                         .padding(.horizontal)
                         .autocapitalization(.none)
                         .padding(.bottom, 5)
+                        .keyboardType(.emailAddress)
                     
                     
                     SecureField("Password", text: $password)
@@ -55,7 +56,7 @@ struct LoginView: View {
                     Button(action: {
                         Task {
                             do {
-//                                try await viewModel.signIn(email: email, password: password)
+                                try await loginViewModel.signIn(email: email, password: password)
                             } catch {
                                 showAlert = true
                             }
@@ -85,8 +86,8 @@ struct LoginView: View {
                     
                     
                     NavigationLink {
-//                        RegisterView()
-//                            .navigationBarBackButtonHidden()
+                        RegisterView()
+                            .navigationBarBackButtonHidden()
                     } label: {
                         HStack{
                             Text("Don't have an account?")

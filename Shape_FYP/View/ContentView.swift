@@ -9,9 +9,16 @@ import SwiftUI
 import AVKit
 
 struct ContentView: View {
+    @EnvironmentObject var loginViewModel: LoginViewModel
     
     var body: some View {
-        DetectionView()
+        
+        if !loginViewModel.login {
+            LoginView()
+        } else {
+            HomeView()
+        }
+        
         
     }
 }

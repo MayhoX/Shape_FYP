@@ -14,7 +14,9 @@ import CoreML
 struct CameraView: UIViewRepresentable {
     let session = AVCaptureSession()
     @Binding var detectedObjects: [String]
-    let model = try! VNCoreMLModel(for: last111().model)
+    @Binding var isDetecting: Bool
+    @Binding var heartRate: [Double]
+    let model = try! VNCoreMLModel(for: last().model)
 
     
     func makeUIView(context: Context) -> UIView {
@@ -25,7 +27,9 @@ struct CameraView: UIViewRepresentable {
               let input = try? AVCaptureDeviceInput(device: device) else {
             return view
         }
-        
+
+
+
         session.addInput(input)
         
         let output = AVCaptureVideoDataOutput()
@@ -34,6 +38,23 @@ struct CameraView: UIViewRepresentable {
             kCVPixelBufferPixelFormatTypeKey as String: NSNumber(value: kCVPixelFormatType_32BGRA)
         ]
         session.addOutput(output)
+
+        
+        if let device = AVCaptureDevice.default(for: .video) {
+            do {
+                try device.lockForConfiguration()
+                let frameRate = device.activeFormat.videoSupportedFrameRateRanges.first?.maxFrameRate ?? 10 // Default to 30 fps
+                device.activeVideoMinFrameDuration = CMTimeMake(value: 1, timescale: Int32(frameRate))
+                device.activeVideoMaxFrameDuration = CMTimeMake(value: 1, timescale: Int32(frameRate))
+                device.unlockForConfiguration()
+            } catch {
+                print("Error setting frame rate: \(error.localizedDescription)")
+            }
+        }
+
+
+        
+        
         
         let previewLayer = AVCaptureVideoPreviewLayer(session: session)
         previewLayer.frame = view.bounds
@@ -48,18 +69,18 @@ struct CameraView: UIViewRepresentable {
     func updateUIView(_ uiView: UIView, context: Context) {}
     
     func makeCoordinator() -> Coordinator {
-        Coordinator(detectedObjects: $detectedObjects, model: model)
+        Coordinator(detectedObjects: $detectedObjects, model: model, isDetecting: $isDetecting)
     }
     
     class Coordinator: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
         @Binding var detectedObjects: [String]
         let model: VNCoreMLModel
-    
+        @Binding var isDetecting: Bool
         
-        init(detectedObjects: Binding<[String]>, model: VNCoreMLModel) {
+        init(detectedObjects: Binding<[String]>, model: VNCoreMLModel, isDetecting: Binding<Bool>) {
             self._detectedObjects = detectedObjects
             self.model = model
-    
+            self._isDetecting = isDetecting
         }
         
         func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
@@ -83,20 +104,22 @@ struct CameraView: UIViewRepresentable {
                     return
                 }
 
-               
-                if let firstResult = results.first,
-                   let firstLabel = firstResult.labels.first {
-                    print(firstLabel.identifier)
-                    print(firstLabel.confidence)
-                    
-                    if firstLabel.confidence > 0.5 {
-                        if self.detectedObjects.last != firstLabel.identifier {
-                            self.detectedObjects.append(firstLabel.identifier)
+                if self.isDetecting == true {
+                    if let firstResult = results.first,
+                       let firstLabel = firstResult.labels.first {
+                        print(firstLabel.identifier)
+                        print(firstLabel.confidence)
+                        
+                        if firstLabel.confidence > 0.8 {
+                            if self.detectedObjects.last != firstLabel.identifier {
+                                self.detectedObjects.append(firstLabel.identifier)
+                            }
                         }
+                    } else {
+                        //print("nil")
                     }
-                } else {
-                    print("nil")
                 }
+
                 
                 
                 

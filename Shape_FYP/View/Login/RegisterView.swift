@@ -15,7 +15,7 @@ struct RegisterView: View {
     @State private var firstName: String = ""
     @State private var lastName: String = ""
     @Environment(\.dismiss) var dismiss
-    @EnvironmentObject var viewModle: AuthViewModel
+    @EnvironmentObject var loginViewModel: LoginViewModel
     
     var body: some View {
         VStack{
@@ -59,6 +59,7 @@ struct RegisterView: View {
                     .padding(.horizontal)
                     .autocapitalization(.none)
                     .padding(.bottom, 5)
+                    .keyboardType(.emailAddress)
                 
                 SecureField("Password", text: $password)
                     .padding()
@@ -88,7 +89,7 @@ struct RegisterView: View {
                 
                 Button(action: {
                     Task {
-                        try await viewModle.signUp(email: email,
+                        try await loginViewModel.signUp(email: email,
                                                    password: password,
                                                    firstName: firstName,
                                                    lastName: lastName)

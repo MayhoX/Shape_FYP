@@ -10,14 +10,11 @@ import Vision
 
 struct DetectedObjectsView: View {
     @Binding var detectedObjects: [String]
-
+    @EnvironmentObject var loginViewModel: LoginViewModel
     var body: some View {
         List(detectedObjects, id: \.self) { object in
             Text(object)
             
-        }
-        Button("Save") {
-            print(detectedObjects)
         }
     }
 }
