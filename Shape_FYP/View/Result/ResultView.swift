@@ -13,7 +13,7 @@ struct ResultView: View {
     @StateObject var exercisesViewModel = ExercisesViewModel()
     @StateObject var historyViewModel = HistoryViewModel()
     @EnvironmentObject var loginViewModel: LoginViewModel
-    @State private var calories = 10
+    @State private var calories = ""
     @State private var pushUpCount = 0
     @State private var sitUpCount = 0
     @State private var squatCount = 0
@@ -57,10 +57,10 @@ struct ResultView: View {
                         {
                             Text("\(sitUpCount)")
                         }
-                        else if (exercise.name == "squat")
-                        {
-                            Text("\(squatCount)")
-                        }
+//                        else if (exercise.name == "squat")
+//                        {
+//                            Text("\(squatCount)")
+//                        }
                         else if (exercise.name == "push-up"){
                             Text("\(pushUpCount)")
                         }
@@ -86,6 +86,9 @@ struct ResultView: View {
                     pushUpCount = countRepetitions(for: "push", in: detectedObjects)
                     sitUpCount = countRepetitions(for: "sit", in: detectedObjects)
                     squatCount = countRepetitions(for: "squat", in: detectedObjects)
+                    
+                    calories = countCalories(exercises: exercisesViewModel.exercises, pushUpCount: pushUpCount, sitUpCount: sitUpCount, squatCount: squatCount)
+                                      
                     await saveHistory(loginViewModel: loginViewModel, calories: String(calories), aveHeatRate: "1111", pushUpCount: pushUpCount, sitUpCount: sitUpCount, squatCount: squatCount)
                 }
             }
@@ -118,6 +121,30 @@ struct ResultView: View {
         return count
     }
 
+    
+    func countCalories(exercises: [Exercises], pushUpCount: Int, sitUpCount: Int, squatCount: Int) -> String {
+        var totalCalories = 0.0
+            
+            for exercise in exercises {
+                print (totalCalories)
+                switch exercise.name {
+                case "push-up":
+                    totalCalories += Double(pushUpCount) * (Double(exercise.calories) ?? 0)
+                case "sit-up":
+                    totalCalories += Double(sitUpCount) * (Double(exercise.calories) ?? 0)
+                case "squat":
+                    totalCalories += Double(squatCount) * (Double(exercise.calories) ?? 0)
+                default:
+                    break
+                }
+            }
+            
+            return String(format: "%.1f", totalCalories)
+        }
+    
+    
+    
+    
     func getFormattedDate() -> String {
         let formatter = DateFormatter()
         formatter.dateStyle = .long

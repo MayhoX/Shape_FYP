@@ -15,15 +15,16 @@ class HistoryViewModel: ObservableObject{
     @Published var histroys: [History] = []
     
     func fetchHistory(userID: String) async {
-        do {
-            let querySnapshot = try await Firestore.firestore().collection("users").document(userID).collection("historys").getDocuments()
-            self.histroys = try querySnapshot.documents.compactMap {
-                try $0.data(as: History.self)
+            do {
+                let querySnapshot = try await Firestore.firestore().collection("users").document(userID).collection("historys").getDocuments()
+                self.histroys = try querySnapshot.documents.compactMap {
+                    try $0.data(as: History.self)
+                }
+                self.histroys.sort { $0.date > $1.date || ($0.date == $1.date && $0.time > $1.time) }
+            } catch {
+                print("ERROR FETCHING SHOPS: \(error)")
             }
-        } catch {
-            print("ERROR FETCHING SHOPS: \(error)")
         }
-    }
     
 
     func AddHistory(userID: String, date: String, time: String, calorie: String, aveHeatRate: String, push_up: Int, sit_up: Int, squat: Int) async throws{

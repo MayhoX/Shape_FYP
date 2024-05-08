@@ -45,12 +45,48 @@ struct HistoryListRowView: View {
                 Text(history.time)
                     .font(.subheadline)
                     .foregroundColor(.gray)
+                Text(history.calorie)
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
             }
             Spacer()
+            StatusIndicator(calorie: Double(history.calorie) ?? 0)
         }
         .padding()
         .onTapGesture {
             onSelected()
         }
+    }
+}
+
+struct StatusIndicator: View {
+    var calorie: Double
+    var status: String {
+        if calorie >= 100 {
+            return "Good"
+        } else if calorie > 50 {
+            return "Average"
+        } else {
+            return "Bad"
+        }
+    }
+    var color: Color {
+        switch status {
+            case "Good":
+                return .green
+            case "Average":
+                return .orange
+            default:
+                return .red
+        }
+    }
+    
+    var body: some View {
+        Text(status)
+            .font(.footnote)
+            .foregroundColor(.white)
+            .padding(8)
+            .background(color)
+            .clipShape(Capsule())
     }
 }

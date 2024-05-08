@@ -47,11 +47,11 @@ struct HistoryInfoView: View {
                     Spacer()
                     Text("\(history.sit_up) times")
                 }
-                HStack {
-                    Text("Squats:")
-                    Spacer()
-                    Text("\(history.squat) times")
-                }
+//                HStack {
+//                    Text("Squats:")
+//                    Spacer()
+//                    Text("\(history.squat) times")
+//                }
             }
             .padding(.horizontal)
         }
