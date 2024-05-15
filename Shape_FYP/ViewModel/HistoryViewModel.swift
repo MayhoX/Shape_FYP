@@ -8,7 +8,7 @@
 import Foundation
 import FirebaseFirestore
 import Firebase
-import FirebaseFirestoreSwift
+import FirebaseFirestoreSwift 
 
 class HistoryViewModel: ObservableObject{
     @Published var history: History?

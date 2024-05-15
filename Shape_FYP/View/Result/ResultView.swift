@@ -10,6 +10,7 @@ import SwiftUI
 struct ResultView: View {
     let currentDate = Date()
     @Binding var detectedObjects: [String]
+    @Binding var heartRate: [Double]
     @StateObject var exercisesViewModel = ExercisesViewModel()
     @StateObject var historyViewModel = HistoryViewModel()
     @EnvironmentObject var loginViewModel: LoginViewModel
@@ -44,7 +45,7 @@ struct ResultView: View {
             HStack(spacing: 10) {
                 Text("Ave Heart Rate:")
                     .font(.title)
-                Text("80")
+                Text(aveHeartRate(hartRate: heartRate))
                     .font(.headline)
             }
             
@@ -89,7 +90,7 @@ struct ResultView: View {
                     
                     calories = countCalories(exercises: exercisesViewModel.exercises, pushUpCount: pushUpCount, sitUpCount: sitUpCount, squatCount: squatCount)
                                       
-                    await saveHistory(loginViewModel: loginViewModel, calories: String(calories), aveHeatRate: "1111", pushUpCount: pushUpCount, sitUpCount: sitUpCount, squatCount: squatCount)
+                    await saveHistory(loginViewModel: loginViewModel, calories: String(calories), aveHeatRate: aveHeartRate(hartRate: heartRate), pushUpCount: pushUpCount, sitUpCount: sitUpCount, squatCount: squatCount)
                 }
             }
     }
@@ -143,6 +144,14 @@ struct ResultView: View {
         }
     
     
+    func aveHeartRate(hartRate: [Double]) -> String {
+        var total = 0.0
+        for rate in hartRate {
+            total += rate
+        }
+        let ave = total / Double(hartRate.count)
+        return String(format: "%.1f", ave)
+    }
     
     
     func getFormattedDate() -> String {
@@ -163,7 +172,7 @@ struct ResultView: View {
 
 
 #Preview {
-    ResultView(detectedObjects: .constant(["push-up", "push-down", "push-down", "push-up", "push-up", "push-down", "push-up", "sit-down", "sit-up", "sit-down"]))
+    ResultView(detectedObjects: .constant(["push-up", "push-down", "push-down", "push-up", "push-up", "push-down", "push-up", "sit-down", "sit-up", "sit-down"]), heartRate: .constant([11.0 ,22.9 ,33.2]))
 }
 
 

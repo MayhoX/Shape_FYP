@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		201655972BE78B8E00D61B79 /* P_last.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 201655962BE78B8E00D61B79 /* P_last.mlpackage */; };
-		201655992BE78B9800D61B79 /* S_last.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 201655982BE78B9800D61B79 /* S_last.mlpackage */; };
 		20193B392BC580BF00FDFBCF /* ExercisesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20193B382BC580BF00FDFBCF /* ExercisesViewModel.swift */; };
 		203AD5FA2BC552C700FBAA09 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203AD5F92BC552C700FBAA09 /* HomeView.swift */; };
 		205D5A332B9ED7EF00C7363C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D5A322B9ED7EF00C7363C /* RegisterView.swift */; };
 		205E11C42BEA9B4C0045115A /* CountDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205E11C32BEA9B4C0045115A /* CountDownView.swift */; };
+		205E11C62BEB36C10045115A /* S_last.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 205E11C52BEB36C10045115A /* S_last.mlpackage */; };
 		206D0EF52BC3AF06002D1812 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D0EF42BC3AF06002D1812 /* ResultView.swift */; };
 		206D0EF72BC3AF10002D1812 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D0EF62BC3AF10002D1812 /* HistoryView.swift */; };
 		209D52952BE36C6B00FBC84A /* HistoryInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209D52942BE36C6B00FBC84A /* HistoryInfoView.swift */; };
@@ -64,13 +64,13 @@
 
 /* Begin PBXFileReference section */
 		201655962BE78B8E00D61B79 /* P_last.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = P_last.mlpackage; sourceTree = "<group>"; };
-		201655982BE78B9800D61B79 /* S_last.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = S_last.mlpackage; sourceTree = "<group>"; };
 		20193B382BC580BF00FDFBCF /* ExercisesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewModel.swift; sourceTree = "<group>"; };
 		20193B3A2BC63FCE00FDFBCF /* Shape_FYP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Shape_FYP.entitlements; sourceTree = "<group>"; };
 		20193B3B2BC6401D00FDFBCF /* Shape-FYP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Shape-FYP-Info.plist"; sourceTree = SOURCE_ROOT; };
 		203AD5F92BC552C700FBAA09 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		205D5A322B9ED7EF00C7363C /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		205E11C32BEA9B4C0045115A /* CountDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownView.swift; sourceTree = "<group>"; };
+		205E11C52BEB36C10045115A /* S_last.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = S_last.mlpackage; sourceTree = "<group>"; };
 		206D0EF42BC3AF06002D1812 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		206D0EF62BC3AF10002D1812 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		209D52942BE36C6B00FBC84A /* HistoryInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInfoView.swift; sourceTree = "<group>"; };
@@ -257,7 +257,7 @@
 		20F8F5122B9DFE7A00447299 /* CoreModel */ = {
 			isa = PBXGroup;
 			children = (
-				201655982BE78B9800D61B79 /* S_last.mlpackage */,
+				205E11C52BEB36C10045115A /* S_last.mlpackage */,
 				201655962BE78B8E00D61B79 /* P_last.mlpackage */,
 			);
 			path = CoreModel;
@@ -423,7 +423,6 @@
 				20F8F5162B9DFE7A00447299 /* CameraPreview.swift in Sources */,
 				20B5A0592BA1802200A17869 /* History.swift in Sources */,
 				20F8F51A2B9DFE7A00447299 /* LoginView.swift in Sources */,
-				201655992BE78B9800D61B79 /* S_last.mlpackage in Sources */,
 				20F8F51B2B9DFE7A00447299 /* ContentView.swift in Sources */,
 				20B5A05B2BA181DD00A17869 /* Exercises.swift in Sources */,
 				20F8F51D2B9DFE7A00447299 /* Shape_FYPApp.swift in Sources */,
@@ -436,6 +435,7 @@
 				206D0EF52BC3AF06002D1812 /* ResultView.swift in Sources */,
 				206D0EF72BC3AF10002D1812 /* HistoryView.swift in Sources */,
 				205D5A332B9ED7EF00C7363C /* RegisterView.swift in Sources */,
+				205E11C62BEB36C10045115A /* S_last.mlpackage in Sources */,
 				20F8F5182B9DFE7A00447299 /* DetectedObjectsView.swift in Sources */,
 				20B5A0572BA1801600A17869 /* HistoryViewModel.swift in Sources */,
 				20F8F51C2B9DFE7A00447299 /* LoginViewModel.swift in Sources */,
@@ -608,9 +608,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Shape-FYP-Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
-				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = HealthKit;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = HealthKit;
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = HealthKit;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "We use HealthKit to track your heart rate during exercise sessions.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We use HealthKit to track your heart rate during exercise sessions.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We use HealthKit to track your heart rate during exercise sessions.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -644,9 +644,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Shape-FYP-Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
-				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = HealthKit;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = HealthKit;
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = HealthKit;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "We use HealthKit to track your heart rate during exercise sessions.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We use HealthKit to track your heart rate during exercise sessions.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We use HealthKit to track your heart rate during exercise sessions.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

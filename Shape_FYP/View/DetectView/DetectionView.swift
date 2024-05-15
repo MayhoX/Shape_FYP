@@ -34,11 +34,19 @@ struct DetectionView: View {
             CameraView(detectedObjects: $detectedObjects, isDetecting: $isDetecting, heartRate: $heartRate, mod: $mod, selectedExercise: $selectedExercise, exerciseList: $exerciseList, exerciseCountList: $exerciseCountList, restTime: $restTime, isFinished: $isFinished, isStop: $isStop)
             
             
-            DetectedObjectsView(detectedObjects: $detectedObjects)
+            if (isStop){
+                CountDownView(restTime: $restTime, isStop: $isStop, isDetecting: $isDetecting)
+            }
+
             
-            Text(mod ?? "")
+//            DetectedObjectsView(detectedObjects: $detectedObjects, heartRate: $heartRate)
             
             
+//            Text("Heart Rate: \(heartRate.last ?? 0)")
+//                .font(.title)
+//                .foregroundColor(.red)
+//                .padding(.top, 20)
+
             
             Button(action: {
                 if isDetecting {
@@ -58,16 +66,14 @@ struct DetectionView: View {
                 Alert(
                     title: Text(isFinished ? "Detection Finished" : "Stop Detection"),
                     message: Text(isFinished ? "The custom training has finished." : "Are you sure you want to stop detection?"),
-                    primaryButton: .default(Text("No")) {
-                        self.isDetecting = true
-                        
-                    },
-                    secondaryButton: .cancel(Text("Yes")) {
+                    primaryButton: .default(Text("Yes")) {
                         self.isDetecting = false
                         self.navigateToResult = true
-                        
-                    })
-                    
+                    },
+                    secondaryButton: .cancel(Text("No")) {
+                        self.isDetecting = true
+                    }
+                )
             }.onChange(of: isFinished) { newValue in
                 if newValue {
                     showingAlert = true
@@ -75,9 +81,12 @@ struct DetectionView: View {
             }
         
 
-            NavigationLink(destination: ResultView(detectedObjects: $detectedObjects), isActive: $navigateToResult) {
+            NavigationLink(destination: ResultView(detectedObjects: $detectedObjects, heartRate: $heartRate), isActive: $navigateToResult) {
                 EmptyView()
             }
+            
+        
+            
             
         }
     }

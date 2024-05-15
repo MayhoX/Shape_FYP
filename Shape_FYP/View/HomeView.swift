@@ -37,6 +37,7 @@ struct HomeView: View {
         NavigationView {
             VStack(spacing: 30) {
             
+                
                 Button(action: {
                     exerciseList = []
                     exerciseCountList = []
@@ -169,6 +170,7 @@ struct HomeView: View {
                             // Input field for exercise count
                             TextField("Count", text: $exerciseCountString)
                                 .keyboardType(.numberPad)
+                                
                             
                             // Add button
                             Button(action: {
