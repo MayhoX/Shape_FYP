@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var email: String = "aa@aa.com"
-    @State private var password: String = "qqqqqq"
+    @State private var email: String = ""
+    @State private var password: String = ""
     @EnvironmentObject var loginViewModel: LoginViewModel
     @State private var showAlert = false
     

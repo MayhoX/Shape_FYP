@@ -13,11 +13,11 @@ struct DetectedObjectsView: View {
     @EnvironmentObject var loginViewModel: LoginViewModel
     @Binding var heartRate: [Double]
     var body: some View {
-//        List(detectedObjects, id: \.self) { object in
-//            Text(object)
-//        }
-        List(heartRate.indices, id: \.self) { index in
-            Text("\(heartRate[index])")
+        List(detectedObjects, id: \.self) { object in
+            Text(object)
         }
+//        List(heartRate.indices, id: \.self) { index in
+//            Text("\(heartRate[index])")
+//        }
     }
 }

@@ -10,6 +10,8 @@ import SwiftUI
 struct HistoryView: View {
     @StateObject var historyViewModel = HistoryViewModel()
     @EnvironmentObject var loginViewModel: LoginViewModel
+    @State private var showAlert = false
+    @State private var alertMessage = ""
     
     var body: some View {
         List(historyViewModel.histroys) { history in
@@ -27,6 +29,28 @@ struct HistoryView: View {
             }
         }
         .navigationTitle("History")
+        .toolbar {
+            Button(action: {
+                alertMessage = """
+                Calorie Status Information:
+                
+                • Green: Calorie >= 100 (Good)
+                • Orange: 50 < Calorie < 100 (Average)
+                • Red: Calorie <= 50 (Bad)
+                """
+                showAlert = true
+            }) {
+                Image(systemName: "exclamationmark.circle")
+            }
+        }
+        .alert(isPresented: $showAlert) {
+            Alert(
+                title: Text("Calorie Status"),
+                message: Text(alertMessage),
+                dismissButton: .default(Text("OK"))
+            )
+        }
+        
     }
 }
 
